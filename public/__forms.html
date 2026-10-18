@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dolce Dessert order form</title>
+</head>
+<body>
+  <!-- Only used by Netlify to detect the order form at deploy time -->
+  <form name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="order" />
+    <input type="hidden" name="subject" />
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <input type="email" name="email" />
+    <input type="number" name="quantity" />
+    <input type="text" name="total" />
+    <input type="text" name="fulfillment" />
+    <textarea name="address"></textarea>
+    <input type="date" name="date" />
+    <input type="text" name="time" />
+    <input type="text" name="payment" />
+    <textarea name="notes"></textarea>
+    <input name="bot-field" />
+  </form>
+</body>
+</html>

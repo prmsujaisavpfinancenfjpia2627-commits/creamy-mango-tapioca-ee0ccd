@@ -1,0 +1,27 @@
+@import "tailwindcss" source("../");
+
+@theme {
+  --color-cream: #fff8ec;
+  --color-custard: #fde9bf;
+  --color-mango: #f6a21e;
+  --color-mango-deep: #e07a10;
+  --color-cocoa: #3d2414;
+  --color-cocoa-soft: #7a5a44;
+  --color-leaf: #4f7a3a;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+
+body {
+  @apply m-0 bg-cream text-cocoa font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.field {
+  @apply w-full rounded-xl border border-cocoa/15 bg-white px-4 py-3 text-cocoa placeholder:text-cocoa-soft/60 transition focus:border-mango focus:outline-none focus:ring-4 focus:ring-mango/20;
+}
+
+.label {
+  @apply mb-1.5 block text-sm font-semibold text-cocoa;
+}
